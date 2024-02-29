@@ -1,0 +1,16 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /Telusko
+spring:
+  datasource:
+    password: 123456
+    url: jdbc:mysql://localhost:3306/TeluskoCourses
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
